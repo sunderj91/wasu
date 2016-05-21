@@ -1,0 +1,33 @@
+ <ion-view view-title="WaSu" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </button>
+    <ion-content>     
+
+        <div class="hero has-mask slide-up" style="background-image: url('./img/address.jpg');">
+            <div class="content">
+            </div>
+        </div>
+        <div class="mid-bar dark-bg z1 padding">
+            <h3>Book The Water Tanker</h3>
+            <p>Tell us How much and When, We will make it</p>
+        </div>
+
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Tank Capacity</span>
+                    <input type="text" placeholder="Tank Capacity" ng-model="book.destination">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label"> Date</span>
+                    <input type="date" placeholder="State Date" ng-model="book.startdate">
+                </label>   
+                
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="doBooking()">
+                    Book a Tanker
+                </button>
+            </div>       
+            </ion-content>
+</ion-view>

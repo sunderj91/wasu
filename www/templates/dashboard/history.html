@@ -1,0 +1,34 @@
+<ion-view view-title="History Details" align-title="center" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+   <ion-content>
+
+   <ion-list>
+      <ion-item ng-repeat="item in history">
+    <div class="list card">
+
+      <div class="item">
+        
+        <h2>{{item.supplier}}</h2>
+        <p>{{item.title}}</p>
+      </div>
+
+      <div class="item item-body">
+      <img class="full-image" src="img/water-supply.jpg">
+
+        <p>
+          <a href="#" class="subdued">Water {{item.water}}</a>
+          <a href="#" class="subdued">Amount {{item.amount}}</a>
+        </p>
+      </div>
+
+</div>
+
+      </ion-item>
+    </ion-list> 
+
+        
+    </ion-content>
+</ion-view>

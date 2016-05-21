@@ -1,0 +1,40 @@
+
+<ion-view view-title="Settings">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            <ion-content>
+            <div class="card">
+            <ion-item>
+               <h2 class="text-center">Notification Method</h2> 
+                <ion-list>
+                  <ion-radio ng-model="notiMethod" ng-value="'auto'"> Automatic </ion-radio>
+                  <ion-radio ng-model="notiMethod" ng-value="'manual'">Manual</ion-radio>
+                </ion-list>  
+            </div>
+      
+           <div class="card">
+            <div class="item item-divider">
+              Configure Water Level Notification
+            </div>
+              <label class="item item-input">
+                <span class="input-label">Overhead Tank </span>
+              </label>
+             <div class="item range range-positive">
+                <i class="icon ion-waterdrop"></i>
+                <input type="range" name="volume" min="0" max="100" value="56">
+                <i class="icon ion-waterdrop positive"></i>
+            </div>             
+              <label class="item item-input">
+                <span class="input-label">Sump </span>
+              </label> 
+              <div class="item range range-positive">
+                <i class="icon ion-waterdrop"></i>
+                <input type="range" name="volume" min="0" max="100" value="33" >
+                <i class="icon ion-waterdrop positive"></i>
+            </div>                           
+          </div>
+          </ion-item>       
+    </ion-content>
+</ion-view>

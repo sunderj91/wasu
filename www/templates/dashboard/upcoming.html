@@ -1,0 +1,48 @@
+<ion-view view-title="Dashboard" align-title="center" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+   <ion-content>
+   <div class="item"><h2  class="text-center">Water Tank Details </h2></div>
+
+   <ion-list>
+      <ion-item >
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="img/sump.jpg">
+        <h2>{{sump.type}}</h2>
+        <p>Sensor ID : {{sump.Sensorid}}</p>
+      </div>
+
+      <div class="item item-body">
+        <h2>Capacity : 2 L</h2>
+        <h2> Water Level : 80% </h2>
+        <img class="full-image" src="img/sump.jpg">
+      </div>
+
+</div>
+
+      </ion-item>
+      <ion-item >
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="img/overhead.jpg">
+        <h2>{{overhead.type}}</h2>
+        <p>Sensor ID : {{overhead.Sensorid}}</p>
+      </div>
+
+      <div class="item item-body">
+        <h2>Capacity : 1 L</h2>
+        <h2> Water Level : 40% </h2>
+        <img class="full-image" src="img/overhead.jpg">
+      </div>
+
+</div>
+
+      </ion-item>      
+    </ion-list> 
+    </ion-content>
+</ion-view>

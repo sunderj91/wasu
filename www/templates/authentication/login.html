@@ -1,0 +1,32 @@
+<ion-view view-title="Login" hide-nav-bar="true" >
+
+   
+   <ion-content style="background: url(img/a.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>WaSu</h1>
+            </div>
+        </div>
+         
+   <div class="list">
+        <label class="item item-input">
+          <span class="input-label" style="color:#FFFFFF;">Email</span>
+          <input style="color:#FFFFFF;" type="email" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label" style="color:#FFFFFF;">Password</span>
+          <input type="password" style="color:#FFFFFF;" ng-model="loginData.password" >
+        </label>
+        </div>
+        <div class="padding">
+            <button ng-click="doLogin()" class="button button-full" style="background-color:#168164; color:#FFFFFF;">Login</button>
+        </div>
+        <div class="padding" style="text-align: center; ">
+        <p style="color:#FFFFFF;">Don't have an account <a href='#/signup' style="color:#FFFFFF;">Signup</a> Here</p>
+        <p style="color:#FFFFFF;">Forgot Password?  <a href='#/forgot' style="color:#FFFFFF;">reset</a> Here</p>
+        </div>  
+             
+        
+    </ion-content>
+</ion-view>
